@@ -51,27 +51,32 @@ export default function App() {
                     <Grid container spacing={4}>
                         {cards.map((card) => (
                             <Grid item key={card} xs={12} sm={6} md={4}>
-                                <Card className={classes.card}>
+                                <Card className={classes.card} onClick={() => alert(card + "Clicked")}>
+
                                     <CardMedia
                                         className={classes.cardMedia}
-                                        image="https://source.unsplash.com/random"
-                                        title="Image Title" />
-                                    <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant='h5'>
-                                            Heading
-                                        </Typography>
-                                        <Typography>
-                                            This is a media card You can describe the content
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button size='small' color='primary'>
-                                            View
-                                        </Button>
-                                        <Button size='small' color='primary'>
-                                            Edit
-                                        </Button>
-                                    </CardActions>
+                                        image="https://www.bovic.co.ke/wp-content/uploads/2021/04/Dell-XPS-13-7390.jpg"
+                                        // image="https://source.unsplash.com/random"
+                                        title="Dell XPS" />
+
+                                    <div style={{ backgroundColor: "#FFF" }}>
+                                        <CardContent className={classes.cardContent}>
+                                            <Typography gutterBottom variant='h5'>
+                                                Dell XPS 13
+                                            </Typography>
+                                            <Typography className={classes.multiLineEllipsis}>
+                                                Features up to 11th Gen Intel processors and 4K display, perfectly caters to your home computing and entertainment needs.Features up to 11th Gen Intel processors and 4K display, perfectly caters to your home computing and entertainment needs.
+                                            </Typography>
+                                        </CardContent>
+                                        <CardActions>
+                                            <Button size='small' color='primary'>
+                                                Watchlist
+                                            </Button>
+                                            <Button size='small' color='secondary' onClick={() => alert("Cart")}>
+                                                Add To Cart
+                                            </Button>
+                                        </CardActions>
+                                    </div>
                                 </Card>
                             </Grid>
                         ))}

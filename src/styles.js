@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: "56.25%",
+    margin: "15px",
+    backfaceVisibility: "red",
   },
   cardContent: {
     flexGrow: 1,
@@ -29,6 +31,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: "50px 0",
   },
+  multiLineEllipsis: {
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    display: "-webkit-box",
+    "-webkit-line-clamp": 2,
+    "-webkit-box-orient": "vertical"
+  }
 }));
 
 export default useStyles;
