@@ -64,8 +64,11 @@ export default function App() {
                                             <Typography gutterBottom variant='h5'>
                                                 Dell XPS 13
                                             </Typography>
-                                            <Typography className={classes.multiLineEllipsis}>
+                                            <Typography gutterBottom variant='p' className={classes.multiLineEllipsis}>
                                                 Features up to 11th Gen Intel processors and 4K display, perfectly caters to your home computing and entertainment needs.Features up to 11th Gen Intel processors and 4K display, perfectly caters to your home computing and entertainment needs.
+                                            </Typography>
+                                            <Typography variant='h6'>
+                                                Ksh 25000/=
                                             </Typography>
                                         </CardContent>
                                         <CardActions>
